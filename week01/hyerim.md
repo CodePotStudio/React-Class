@@ -70,4 +70,86 @@ function App() {
     );
 }
 
-export default App;
+export default App;//App.css
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+}
+
+tr td{
+  border-spacing:0;
+  border-collapse:collapse;
+}
+
+.container {
+  display: flex;
+  height: 969px;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+}
+
+.app {
+  width: 500px;
+  margin-top: 70px;
+  padding: center;
+  background-image: ;
+}
+
+.question-section {
+  margin-bottom: 16px;
+}
+
+.question-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin: center;
+}
+
+.question-headA {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.question-text {
+  font-size: 20px;
+  margin-bottom: 8px;
+  margin: center;
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.a,.b,.c,.d{
+  display: inline-block;
+  width: 160px;
+  padding: 30px;
+}
+
+button {
+  font-size: 16px;
+  color: #ffffff;
+  height: 160px;
+  background-color: #1b72ac;
+  border-radius: 5px;
+  border: 0px;
+  padding: 4px;
+  margin: 4px;
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  font-weight: 700;
+}
+
+button:hover {
+  color: #061f3f;
+  background-color: #97c3f5;
+}
