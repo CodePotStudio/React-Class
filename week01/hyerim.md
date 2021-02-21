@@ -23,4 +23,51 @@
         넣기 싫으면 <></>로라도 감싸줘야한다.
     - const는 변수 재선언, 재할당이 불가능한 상수, let은 변수에 재할당이 
         가능한 상수.
-  * React에서는 이벤트명에 camelCase를 사용해야한다.
+  * React에서는 이벤트명에 camelCase를 사용해야한다.  * React에서는 이벤트명에 camelCase를 사용해야한다.
+ 
+  // App.js
+
+  import React from "react";
+import "./App.css";
+
+function App() {
+  function handleClick(event){
+    //alert('버튼 클릭')
+    //console.log(event.target.value);
+    const answer = event.target.value;
+    if (answer === "디자인") {
+      alert("당신은 LG그램을 구매하세요!!");
+      }else if (answer === "가격") {
+        alert("당신은 한성컴퓨터를 구매하세요!!")
+      } else if (answer === "사양") {
+        alert("당신은 맥북을 구매하세요!!");
+    } else {
+      alert("당신은 레노버노트북을 구매하세요!!");
+      } 
+  }
+    return (
+        <div className="container">
+            <div className="app">
+                <div className="question-section">
+                    <h1 className="question-header">
+                        <div className="question-headA">당신에게 알맞은 노트북은?</div>
+                        <span>1</span>/5
+                    </h1>
+                    <div className="question-text">
+                        Q1) 당신은 가전제품을 고를때 무엇을 먼저보나요?
+                    </div>
+                </div>
+                <div className="answer-section">
+                    <tr>
+                      <td className="a"><button onClick={handleClick} value="디자인">디자인</button></td>
+                      <td className="b"><button onClick={handleClick} value="가격">가격</button></td>
+                      <td className="c"><button onClick={handleClick} value="사양">사양</button></td>
+                      <td className="d"><button onClick={handleClick} value="무게">무게</button></td>
+                    </tr>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default App;
