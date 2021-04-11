@@ -25,7 +25,7 @@
 
 # 오픈그래프 적용 여부
 
--  ![Sharing Debugger][https://developers.facebook.com/tools/debug/]를 지원하고 있는데 사이트에 들어가서 검사하고 싶은 링크를 입력하면 됩니다. 
+-  [Sharing Debugger](https://developers.facebook.com/tools/debug/)를 지원하고 있는데 사이트에 들어가서 검사하고 싶은 링크를 입력하면 됩니다. 
 
 # 미리보기가 바뀌지 않는 이유?
 
